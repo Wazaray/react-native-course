@@ -6,7 +6,7 @@ interface CardDetailProps {
   title: string
   subTitle: string
   image: any
-  onClose: () => void // Callback pour fermer la modal
+  onClose: () => void // Callback to close the modal
 }
 
 const CardDetailScreen: React.FC<CardDetailProps> = ({

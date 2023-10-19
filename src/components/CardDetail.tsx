@@ -10,19 +10,16 @@ import {
 interface CardDetailProps {
   title: string
   subTitle: string
-  image: ImageSourcePropType // Utilisez le type approprié pour l'image
+  image: ImageSourcePropType
 }
 
-const CardDetail: React.FC<CardDetailProps> = ({ title, subTitle, image }) => {
-  return (
-    <View style={styles.container}>
-      <Image source={image} style={styles.image} />
-      <Text style={styles.title}>{title}</Text>
-      <Text style={styles.subTitle}>{subTitle}</Text>
-      {/* Ajoutez d'autres éléments pour afficher plus de détails si nécessaire */}
-    </View>
-  )
-}
+const CardDetail: React.FC<CardDetailProps> = ({ title, subTitle, image }) => (
+  <View style={styles.container}>
+    <Image source={image} style={styles.image} />
+    <Text style={styles.title}>{title}</Text>
+    <Text style={styles.subTitle}>{subTitle}</Text>
+  </View>
+)
 
 const styles = StyleSheet.create({
   container: {

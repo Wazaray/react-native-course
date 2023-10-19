@@ -7,7 +7,7 @@ import {
   View,
 } from 'react-native'
 import Card from '../components/Card'
-import CardDetailScreen from './CardDetailScreen' // Assurez-vous d'importer le CardDetailScreen approprié
+import CardDetailScreen from './CardDetailScreen'
 
 interface CardData {
   id: number

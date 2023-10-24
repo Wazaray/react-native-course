@@ -68,7 +68,10 @@ const ViewCardScreen: React.FC = () => {
 
   return (
     <View style={styles.container}>
-      <ScrollView>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        showsHorizontalScrollIndicator={false}
+      >
         {cardsData.map(card => (
           <TouchableOpacity
             key={`${card.id}`}

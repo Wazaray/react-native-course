@@ -18,6 +18,5 @@ yarn install
 npx expo start
 
 # or use `yarn`
-
 yarn expo start
 ```
